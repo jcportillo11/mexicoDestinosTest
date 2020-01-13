@@ -1,0 +1,1012 @@
+{
+	"info": {
+		"_postman_id": "746a4b4d-4a4f-4d87-88fe-73ff7b9b020d",
+		"name": "mexicoDestinos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.- Countries",
+			"item": [
+				{
+					"name": "Countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/countries",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.- Countries",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"countryName\": \"México\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/countries",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Countries",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"countryName\": \"M\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/countries/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"countries",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Countries",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"countryName\": \"Estados Uddnidos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/countries/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"countries",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "2.- Airports",
+			"item": [
+				{
+					"name": "Airports",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/airports",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.- Airports",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"iata\": \"CUN\",\r\n    \"airportName\": \"Aeropuerto internacional de cancún\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/airports",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airports",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": 1,\r\n    \"iata\": \"CUN\",\r\n    \"airportName\": \"ABCDFFF\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/airports/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airports",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airports",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"iata\": \"CUN\",\r\n    \"airportName\": \"ABCDFFF\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/airports/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"airports",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "3.- Destinations",
+			"item": [
+				{
+					"name": "Destinations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/destinations",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"destinations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.- Destinations",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"destinationName\": \"Cancún\",\r\n\t\"countryId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/destinations",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"destinations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destinations",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"destinationName\": \"Las vegas2\",\r\n    \"countryId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/destinations/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"destinations",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destinations",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": 1,\r\n    \"destinationName\": \"Las vegas2\",\r\n    \"countryId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/destinations/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"destinations",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "4.- Zones",
+			"item": [
+				{
+					"name": "Zones",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/zones/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"zones",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.- Zones",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"zoneCode\": \"ZCCUN\",\r\n    \"zoneName\": \"Centro de cancún\",\r\n    \"airportId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/zones",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"zones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Zones",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"zoneCode\": \"ZCCU2\",\r\n    \"zoneName\": \"CTR-02\",\r\n    \"airportId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/zones/ZCCU2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"zones",
+								"ZCCU2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Zones",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"zoneCode\": \"ZCCU2\",\r\n    \"zoneName\": \"CTR-02\",\r\n    \"airportId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/zones/ZCCU2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"zones",
+								"ZCCU2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "5.- Hotels",
+			"item": [
+				{
+					"name": "Hotels",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/hotels/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotels",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.- Hotels",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hotelName\": \"Oasis Smart\",\r\n    \"destinationId\": 1,\r\n    \"zoneCode\": \"ZCCUN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/hotels",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hotels",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"hotelName\": \"JUAN2222222222\",\r\n    \"destinationId\": 2,\r\n    \"zoneCode\": \"ZCCUN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/hotels/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotels",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hotels",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"hotelName\": \"JUAN2222222222\",\r\n    \"destinationId\": 2,\r\n    \"zoneCode\": \"ZCCUN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/hotels/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotels",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "6.- ShuttleTexts",
+			"item": [
+				{
+					"name": "Shuttle Texts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/shuttleTexts/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"shuttleTexts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.- Shuttle Texts",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"language\": \"ESP\",\r\n    \"shuttleName\": \"Traslado Redondo\",\r\n    \"ShuttleContent\": \"Buen traslado muy comodo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/shuttleTexts",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"shuttleTexts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shuttle texts",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"shuttleId\": 1,\r\n    \"language\": \"POR\",\r\n    \"shuttleName\": \"Arrival Shuttle\",\r\n    \"ShuttleContent\": \"Very good shuttle\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/shuttleTexts/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"shuttleTexts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shuttle Texts",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"shuttleId\": 1,\r\n    \"language\": \"ING\",\r\n    \"shuttleName\": \"Arrival Shuttle\",\r\n    \"ShuttleContent\": \"Very good shuttle\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/shuttleTexts/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"shuttleTexts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "7.- Shuttles",
+			"item": [
+				{
+					"name": "Shuttles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/shuttles/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"shuttles",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1.- Shuttles",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shuttleCode\": \"R\",\r\n    \"shuttleTextId\": 1,\r\n    \"zoneCode\": \"ZCCUN\",\r\n    \"netRate\": 3000.00,\r\n    \"tax\": 0.16,\r\n    \"markUp\": 0.12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/shuttles",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"shuttles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shuttles",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"shuttleCode\": \"S\",\r\n    \"zoneCode\": \"ZCCUN\",\r\n    \"grossRate\": 1652.00,\r\n    \"tax\": 0.00,\r\n    \"markUp\": 0.12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/shuttles/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"shuttles",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Shuttles",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"shuttleCode\": \"L\",\r\n    \"zoneCode\": \"ZCCUN\",\r\n    \"shuttleTextId\": 3,\r\n    \"grossRate\": 1500.00,\r\n    \"tax\": 0.16,\r\n    \"markUp\": 0.12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/shuttles/7",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"shuttles",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Autocomeplete",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/api/hotels/autocomplete?term=oas",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"hotels",
+						"autocomplete"
+					],
+					"query": [
+						{
+							"key": "term",
+							"value": "oas"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shuttles Results",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hotelName\": \"Oasis Smart\",\r\n\t\"zoneCode\": \"ZCCUN\",\r\n\t\"language\": \"ESP\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/Shuttles/Results",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"Shuttles",
+						"Results"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
